@@ -1,0 +1,190 @@
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.711) ,rgba(0, 0, 0, 0.711)) , url('../images/me.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+/* .icons i {
+    border: solid white 2px;
+    border-radius: 50%;
+    padding: 2px;
+} */
+body{
+    overflow: hidden;
+}
+nav{
+    transition: 1s;
+}
+
+
+#loading{
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+
+#btnupp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99999;
+    display: none;
+    background-color: #dc3545;
+    transition: 1s;
+}
+
+
+.icons div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:solid white 2px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 15px;
+    transition: all .5s;
+    
+
+
+}
+.icons div:hover{
+    color: tomato;
+    border-color: tomato;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+    color:tomato;
+
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color:tomato;
+
+}
+.big{
+    font-size: 70px;
+    color:rgba(0, 0, 0, 0.411) ;
+}
+
+.line::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: tomato;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50% , -50%);
+    transition: all 1s;
+}
+.item:hover .line::after{
+    width: 120px;
+}
+.anch{
+    width: 70px;
+    height: 70px;
+    background-color: burlywood;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+     top: 0;
+}
+button[hamada='aa']{
+    background-color:red
+}
+.cur_img{
+    width: 150px;
+    height: 150px;
+    transform: translateY(-50%);
+}
+.carousel-indicators [data-bs-target]{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.carousel-indicators button.active{
+    background-color: gray;
+}
+@font-face {
+    font-family: DancingScript ;
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:Martel ;
+    src: url(../fonts/Martel-Black.ttf) , url(../fonts/Martel-ExtraBold.ttf) , url(../fonts/Martel-Light.ttf);
+}
+p{
+    font-family: DancingScript;
+}
+h2{
+    font-family: Martel;
+    font-weight: 900;
+}
+
+/*
+
+*/
+
+
+/* loadinnng */
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+    border-width: 3px 2px 3px 2px;
+    border-style: solid dotted solid dotted;
+    border-color: #de3500 rgba(255, 255, 255,0.3) #fff rgba(151, 107, 93, 0.3);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+    margin: 250px 650px;
+    
+ }
+ .loader:before , .loader:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color:#fff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  
+  }
+ .loader:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }
+
+  
+  .icon div 
+  {
+    width: 40px;
+    height: 40px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 50%;
+    transition: all 1s;
+  }
+
+  .icon div:hover 
+  {
+    color: #4635dc;
+    background-color:whitesmoke;
+    border: 3px solid #4635dc;
+  }
